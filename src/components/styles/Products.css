@@ -1,0 +1,203 @@
+/* our products sec */
+
+.probg{
+    width: 88%;
+
+}
+
+/* .protxt{
+    font-size: 1rem;
+    font-weight: bold;
+} */
+
+@media screen and (max-width:992px) {
+    .probg{
+        
+        width: 100%;
+    }
+  
+    
+}
+
+
+.product {
+    transition: box-shadow 0.2s ease;
+}
+
+.selected {
+    box-shadow: 0px -2px 2px 2px purple;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:290px) and (max-width:399px) {
+    
+    h2{
+        font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1rem;
+    }
+   
+    .proimg{
+        width: 1.2rem;
+        height: 1.2rem;
+       }
+
+    .phnfir{
+        width: 35%;
+        
+    }
+    
+    .phnsec{
+        width: 65%;
+    } 
+     text{
+        font-size: 8px;
+    }
+}
+
+
+
+
+.tabpro{
+    width:70%;
+    height: 13rem;
+      
+   }
+   .tabproin{
+    width: 68%;
+    height: 12.5rem;
+   }
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (min-width:400px) and (max-width: 480px) {
+    h2{
+        font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 0.8rem;
+    }
+     text{
+        font-size: 10px;
+    }
+    .proimg{
+        width: 1.2rem;
+        height: 1.2rem;
+       }
+
+       .phnfir{
+        width: 38%;
+        
+    }
+    
+    .phnsec{
+        width: 62%;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    h2{
+        font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    .tabmargin{
+        margin-top: 1.5rem;
+    }
+
+    h5{
+        font-size: 1rem;
+      
+    }
+     text{
+        font-size: 0.7rem;
+    }
+    .proimg{
+        width: 1.3rem;
+        height: 1.3rem;
+       }
+       
+       .tabpro{
+        width:15rem;
+        height: 10.6rem;
+          
+       }
+       .tabproin{
+        width: 15rem;
+        height: 10.5rem;
+        
+       }
+       .topimgpos{
+        margin-left: 14.5rem;
+       }
+       .tabmar{
+        top:22rem;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    h2{
+        font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.2rem;
+       
+    }
+     text{
+        font-size: 0.8rem;
+    }
+    .proimg{
+        width: 2.5rem;
+        height: 2.5rem;
+       }
+
+       .tabpro{
+        width:18rem;
+        height: 13rem;
+          
+       }
+       .tabproin{
+        width: 17.8rem;
+        height: 12.8rem;
+       }
+
+       .topimgpos{
+        margin-left: 20rem;
+       }
+       .tabmargin{
+        margin-top: 1.2rem;
+    }
+    .tabmar{
+        top:25rem;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    h2{
+        font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.4rem;
+        }
+     text{
+        font-size: 1rem;
+    }
+   .proimg{
+    width: 2.5rem;
+    height: 2.5rem;
+   }
+}

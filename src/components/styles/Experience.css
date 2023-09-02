@@ -1,0 +1,342 @@
+/* Base styles for the list */
+ul.custom-list {
+    width: 13rem;
+    font-size: 1rem;
+    margin-left: 20rem;
+    color: black;
+    list-style-type: none;
+    /* Remove default bullet marks */
+    padding: 0;
+    /* Remove default list padding */
+}
+
+/* Styles for each list item with the sphere */
+ul.custom-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    /* Space for custom bullet mark */
+    margin-bottom: 0.5rem;
+    /* Add spacing between list items */
+}
+
+/* Styles for the sphere bullet mark */
+ul.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Colors for the sphere bullet marks */
+ul.custom-list li:nth-child(1)::before {
+    background: linear-gradient(180deg, rgba(20, 13, 24, 0.76) 65%, rgba(3, 164, 255, 0.77) 100%);
+}
+
+ul.custom-list li:nth-child(2)::before {
+    background: linear-gradient(180deg, rgba(12, 8, 14, 0.76) 65%, rgba(3, 164, 255, 0.77) 100%);
+}
+
+ul.custom-list li:nth-child(3)::before {
+    background:linear-gradient(180deg, rgba(15, 15, 15, 0.76) 65%, rgba(3, 164, 255, 0.77) 100%);
+}
+
+.expe-bg{
+    background-image: url("../../assets/bg1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   /* width: 100%; */
+   /* border: 2px red solid; */
+}
+
+ .heisec
+{
+    height: 24rem;
+    width: 100%;
+   
+}
+
+ @media screen and (max-width: 992px) {
+     .heisec {
+         
+         height: 25rem;
+     }
+ }
+
+ @media screen and (max-width: 348px) {
+    .heisec {
+        
+        height: 27rem;
+        
+    }
+}
+
+
+
+ @media screen and (min-width: 349px) and (max-width: 575px) {
+    .heisec {
+        
+        height: 23rem;
+        
+    }
+}
+
+
+
+.learn-btn{
+    border-radius: 10px;
+    color: #FFF;
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 8%;
+    border: 0;
+}
+
+.learn-btn:hover {
+    /* background-image:linear-gradient( rgba(189, 149, 199, 0.76) ,rgba(163, 141, 212, 0.76),
+        rgba(238, 137, 230, 0.76) , rgba(113, 88, 124, 0.77) ); */
+        
+    background-image: linear-gradient(180deg, rgba(174, 3, 255, 0.76) 0%, rgba(3, 164, 255, 0.77) 100%);;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+
+
+.eye{
+    display:inline-block;
+    border-radius: 200px;
+        background-image: url("../../assets/eye.gif");
+        background-size: 210%;
+        background-position: center;
+        /* background-color: black; */
+       margin-right: 0.5rem;
+      
+        height: 1.2rem;
+        width:2.5rem;
+       
+      
+}
+
+@keyframes slideInAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.trsnpara {
+    animation: slideInAnimation 1s forwards;
+   
+}
+
+/* Add this CSS in your component or import it from a separate CSS file */
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* border: rgba(236, 131, 131, 0.8); */
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+   filter: brightness(1);
+    
+  }
+
+
+  .expbg{
+    background-image: url("../../assets/expfinal1.gif");
+    background-position:bottom;
+    background-size:contain ;
+    background-repeat: no-repeat;
+   /* height: 100%; */
+  margin-left: 0px;
+    
+    /* border: 1px red solid; */
+  }
+  
+ 
+  .expcaptions{
+    
+    margin-left: 5%;
+}
+ 
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .exptxt{
+        font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    .trsnpara{
+        font-size: 1rem;
+    }
+
+    ul.custom-list {
+       font-size: 9px;
+    }
+    h5{
+        font-size: 12px;
+        font-weight: bold;
+    }
+li{
+    font-size: 0.6rem;
+}
+
+        .expbg{
+            background-image: url("../../assets/expfinal1.gif");
+            background-position:left;
+            background-size:135% 65%;
+            background-repeat: no-repeat;
+            /* height: 100%;   */
+          /* padding-left: 5%; */
+          height: 27rem;
+          /* width: 6rem; */
+            
+            /* border: 1px red solid; */
+          }
+
+          .eye{
+            
+              
+                height: 0.8rem;
+                width:1.5rem;
+               
+              
+        }
+        
+        .learn-btn{
+            
+            font-size: 0.6rem;
+            
+        }
+        
+    
+    
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .exptxt{
+        font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    h5{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .expbg{
+        background-image: url("../../assets/expfinal1.gif");
+        background-position:left;
+        background-size:130% 60%;
+        /* background-position:bottom; */
+        /* background-size:120% 100%; */
+        background-repeat: no-repeat;
+        /* height: 100%;   */
+      margin-left: 0px;
+      height: 35rem;
+        
+        /* border: 1px red solid; */
+      }
+      ul.custom-list {
+        font-size: 9px;
+     }
+    li{
+        font-size: 0.6rem;
+    }
+
+    .eye{
+            
+              
+        height: 1rem;
+        width:1.8rem;
+       
+      
+}
+
+.learn-btn{
+            
+    font-size: 0.6rem;
+    
+}
+ 
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .exptxt{
+        font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .expbg{
+        background-image: url("../../assets/expfinal1.gif");
+        background-position:bottom;
+        background-size:120% 100%;
+        background-repeat: no-repeat;
+        /* height: 100%;   */
+      padding-left: 10%;
+      
+        
+        /* border: 1px red solid; */
+      }
+      .expcaptions{
+    
+        padding-left: 10%;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    .exptxt{
+        font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+.expcaptions{
+    width: 50%;
+    margin-left: 5%;
+    padding-left: 10%;
+}
+    .expbg{
+        background-image: url("../../assets/expfinal1.gif");
+        background-position:bottom;
+        background-size:120% 100%;
+        background-repeat: no-repeat;
+        /* height: 100%;   */
+      padding-left: 35%;
+      
+        
+        /* border: 1px red solid; */
+      }
+   
+}

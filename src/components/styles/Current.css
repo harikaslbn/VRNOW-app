@@ -1,0 +1,128 @@
+.projecttxt{
+    font-size: 1rem;
+}
+
+.projectimg{
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.plnbg1{
+    width: 88%;
+}
+
+@media screen and (max-width:992px) {
+    .plnbg1{
+        
+        width: 85%;
+        padding: 2rem;
+        
+    }
+}
+
+@media screen and (max-width:468px) {
+    .projecttxt{
+        font-size: 0.8rem;
+
+    }
+
+    .projectimg{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media screen and (max-width:402px) {
+    .projecttxt{
+        font-size: 0.6rem;
+
+    }
+
+    .projectimg{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+.curbg{
+    background-image: url("../../assets/bg1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.grid-item {
+   margin-left:1rem ;
+    /* text-align: center; */
+}
+
+@media screen and (max-width: 742px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 5px;
+
+
+    }
+    
+}
+
+@media screen  and (min-width: 742px) and (max-width: 991px){
+    .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+        }
+
+      
+}
+
+
+.bookbtn {
+   margin-top: 10%;
+    border: 0;
+}
+
+.bookbtn:hover {
+    background-image: linear-gradient(rgba(189, 149, 199, 0.76), rgba(163, 141, 212, 0.76),
+            rgba(238, 137, 230, 0.76), rgba(113, 88, 124, 0.77));
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    h3{
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    h3{
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    h3{
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    h3{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,121 @@
+/* why choose sec */
+
+.why-bg{
+    background-image: url("../../assets/whybg.gif");
+    background-size: cover;
+    background-position: center;
+    width: 88%;
+}
+
+.whyhead{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+@keyframes slideInAnimationwhy {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.whysec1 {
+    animation: slideInAnimationwhy 1s forwards;
+   
+}
+
+@keyframes slideInAnimationwhy2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.whysec2 {
+    animation: slideInAnimationwhy2 1s forwards;
+   
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .whyhead{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .why-bg{
+        
+        width: 100%;
+        padding-left: 2rem;
+    }
+.whypara{
+    font-size: 10px;
+}
+.whyimage1{
+    width:14%;
+}
+.whyimage{
+    width: 18%;
+}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .whyhead{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .why-bg{
+        
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .whypara{
+        font-size: 12px;
+    }
+    .whyimage1{
+        width:12%;
+    }
+    .whyimage{
+        width: 14%;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .whyhead{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .whypara{
+        font-size: 14px;
+    }
+
+    .whyimage1{
+        width:10%;
+    }
+    .whyimage{
+        width: 12%;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    .whypara{
+        font-size: 18px;
+    }
+    .whyimage1{
+        width:8%;
+    }
+    .whyimage{
+        width: 10%;
+    }
+}

@@ -1,0 +1,95 @@
+.testbg{
+    background-image: url("../../assets/bg1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testbg2 {
+    background-image: url("../../assets/testimonials/cele.gif");
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    h2{
+        font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    .testpar{
+        font-size: 0.6rem;
+    }
+    .testimg{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    h2{
+        font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    h5{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .testpar{
+        font-size: 0.8rem;
+    }
+    .testimg{
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    h2{
+        font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .testpar{
+        font-size: 0.7rem;
+    }
+    .testimg{
+        height: 3.8rem;
+        width: 3.8rem;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    h2{
+        font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    .testpar{
+        font-size: 0.8rem;
+    }
+    .testimg{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}

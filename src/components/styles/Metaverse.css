@@ -1,0 +1,201 @@
+/* //metaverse styles */
+.metabg{
+    background-image: url("../../assets/bg1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boyimg{
+   background-image: url("../../assets/metaverse/boy.png");
+   background-size:contain;
+  
+   background-position:right;
+   background-repeat: no-repeat;
+ 
+      
+}
+
+@media screen and (max-width:992px) {
+    .boyimg{
+        background-image: url("../../assets/metaverse/boy.png");
+        background-size:contain;
+       
+        background-position:130% 1% ;
+        background-repeat: no-repeat;
+    
+      
+           
+     }
+     
+     
+}
+
+@media screen and (max-width:799px) {
+    .boyimg{
+       background-position:180% ;
+          
+     }
+    }
+
+    @media screen and (max-width:699px) {
+        .boyimg{
+           background-position:top;
+           background-size: 180%;
+              
+         }
+
+         .metcontent{
+            background-color: rgba(10, 9, 10, 0.2);
+           margin-top: 1rem;
+           padding: 1rem;
+           border-radius: 10px;
+         }
+        }
+
+    
+
+.learn-btn1 {
+    border-radius: 5px;
+    color: #FFF;
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    
+    border: 0;
+}
+
+.learn-btn1:hover {
+    /* background-image: linear-gradient(rgba(189, 149, 199, 0.76), rgba(163, 141, 212, 0.76),
+            rgba(238, 137, 230, 0.76), rgba(113, 88, 124, 0.77)); */
+            
+    background-image: linear-gradient(180deg, rgba(174, 3, 255, 0.76) 0%, rgba(3, 164, 255, 0.77) 100%);;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+
+
+@keyframes changeBackground2 {
+
+    0%,
+    39.99% {
+        background-image: url("../../assets/metaverse/gif1.gif");
+    }
+
+    40%,
+    69.99% {
+        background-image: url("../../assets/metaverse/gif2.gif");
+    }
+
+    70%,
+    100% {
+        background-image: url("../../assets/metaverse/gif3.gif");
+    }
+}
+
+.gifbg {
+   
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    animation: changeBackground2 15s infinite;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    h2{
+        font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    .gifbg{
+        height: 40vh;
+    }
+    .metxt{
+      font-size:0.8rem;
+
+    }
+}
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    h2{
+        font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .metxt{
+        font-size: 1rem;
+    }
+    .gifbg{
+        height: 45vh;
+    }
+    .rowcon{
+      margin: 20px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    h2{
+        font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+   
+    .gifbg{
+        /* height: 34vh; */
+        /* width: 5%; */
+        /* align-self: center; */
+    }
+    .metxt{
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    h2{
+        font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    h5{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    
+    .metxt{
+        font-size: 1rem;
+    }
+   
+}
+

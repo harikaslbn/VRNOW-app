@@ -1,0 +1,107 @@
+/* buildes.jsx css-styles/ */
+
+.bulmain{
+    background-color: black;
+}
+
+.handbg{
+    background-image: url("../../assets/handpart.png");
+    background-position: center;
+    background-size: 140%;
+}
+
+
+.bulmain2 {
+    background-image: url("../../assets/builders.gif");
+   
+    background-size: cover;
+    width: 88%;
+    /* filter: brightness(0.2); */
+}
+
+
+
+
+@keyframes slideInAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.handandbui {
+    animation: slideInAnimation 1s forwards;
+    
+}
+
+@keyframes slideInAnimation1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.companies {
+    animation: slideInAnimation1 1s forwards;
+
+}
+
+.build-text{
+    /* font-size: 2rem; */
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    
+    .bulmain2 {
+        width: 100%;
+    }
+  .build-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .build-text{
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .bulmain2 {
+        width: 95%;
+    }
+  
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .build-text{
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px)  {
+    
+    .build-text{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+}
